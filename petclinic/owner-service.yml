@@ -1,5 +1,4 @@
 ---
-# Server settings
 server:
   port: 9198
   servlet:
