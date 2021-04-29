@@ -1,20 +1,32 @@
 ---
 # Server settings
-server.port=9198
-server.servlet.context-path: /ownerapi
+server:
+  port: 9198
+  servlet:
+    context-path: /ownerapi
 
-testInt=11
-testString=microservices
+testInt: 11
+testString: microservices
 
 
 # H2 Settings
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console: 
+      enabled: true
+      path: /h2-console
 
 # Hibernate & JPA settings
-spring.jackson.serialization.indent_output=true
-spring.jackson.serialization.FAIL_ON_EMPTY_BEANS=false
-spring.jpa.hibernate.ddl-auto=create
+  jackson:
+    serialization:
+      indent_output: true
+      FAIL_ON_EMPTY_BEANS: false
+  jpa:
+    hibernate:
+    ddl-auto: create
 #spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
+    properties:
+      hibernate:
+        format_sql: true
