@@ -10,5 +10,5 @@ spring:
   console:
     enabled: true
     path: /h2-console
-message: Hello from github
+message: Hello from git
 
