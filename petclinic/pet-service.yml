@@ -1,2 +1,13 @@
 ---
-eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka
+server:
+  port: 9199
+  servlet:
+    context-path: /petapi
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+  console:
+    enabled: true
+    path: /h2-console
+
