@@ -2,7 +2,7 @@
 server:
   port: 9199
   servlet:
-    context-path: /petapi
+    context-path: /pets
 message: Hello from github
 spring:
   datasource:
