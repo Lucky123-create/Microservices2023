@@ -11,4 +11,6 @@ spring:
     password: ${DATABASE_PASSWORD}
     hikari:
       maximum-pool-size:  2
-
+owner-service:
+  ribbon:
+    listOfServers: http://localhost:9191,http://localhost:9291
