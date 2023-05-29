@@ -1,5 +1,6 @@
 ---
 server:
+  port: 9198
   servlet:
     context-path: /owners
 message: Hello from github
