@@ -11,6 +11,7 @@ spring:
     password: ${DATABASE_PASSWORD}
     hikari:
       maximum-pool-size:  2
-owner-service:
-  ribbon:
-    listOfServers: localhost:9198,localhost:9298
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
