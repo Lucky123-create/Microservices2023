@@ -10,5 +10,9 @@ spring:
     password: ${DATABASE_PASSWORD}
     hikari:
       maximum-pool-size:  2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
 
 
